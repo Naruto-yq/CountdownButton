@@ -10,11 +10,11 @@
 		0E4BE1C91C9AD2EC000EE871 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BE1C81C9AD2EC000EE871 /* main.m */; };
 		0E4BE1CC1C9AD2EC000EE871 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BE1CB1C9AD2EC000EE871 /* AppDelegate.m */; };
 		0E4BE1CF1C9AD2EC000EE871 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BE1CE1C9AD2EC000EE871 /* ViewController.m */; };
-		0E4BE1D21C9AD2EC000EE871 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BE1D01C9AD2EC000EE871 /* Main.storyboard */; };
 		0E4BE1D41C9AD2EC000EE871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BE1D31C9AD2EC000EE871 /* Assets.xcassets */; };
 		0E4BE1D71C9AD2EC000EE871 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E4BE1D51C9AD2EC000EE871 /* LaunchScreen.storyboard */; };
 		0E4BE1E21C9AD2EC000EE871 /* CountdownButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BE1E11C9AD2EC000EE871 /* CountdownButtonTests.m */; };
 		0E4BE1ED1C9AD2EC000EE871 /* CountdownButtonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BE1EC1C9AD2EC000EE871 /* CountdownButtonUITests.m */; };
+		0E4BE1FD1C9AD4B3000EE871 /* UICountdownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4BE1FC1C9AD4B3000EE871 /* UICountdownButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 		0E4BE1CB1C9AD2EC000EE871 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0E4BE1CD1C9AD2EC000EE871 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0E4BE1CE1C9AD2EC000EE871 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0E4BE1D11C9AD2EC000EE871 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E4BE1D31C9AD2EC000EE871 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E4BE1D61C9AD2EC000EE871 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E4BE1D81C9AD2EC000EE871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +50,8 @@
 		0E4BE1E81C9AD2EC000EE871 /* CountdownButtonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountdownButtonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E4BE1EC1C9AD2EC000EE871 /* CountdownButtonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountdownButtonUITests.m; sourceTree = "<group>"; };
 		0E4BE1EE1C9AD2EC000EE871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E4BE1FB1C9AD4B3000EE871 /* UICountdownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICountdownButton.h; sourceTree = "<group>"; };
+		0E4BE1FC1C9AD4B3000EE871 /* UICountdownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICountdownButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +102,11 @@
 		0E4BE1C61C9AD2EC000EE871 /* CountdownButton */ = {
 			isa = PBXGroup;
 			children = (
+				0E4BE1FA1C9AD490000EE871 /* View */,
 				0E4BE1CA1C9AD2EC000EE871 /* AppDelegate.h */,
 				0E4BE1CB1C9AD2EC000EE871 /* AppDelegate.m */,
 				0E4BE1CD1C9AD2EC000EE871 /* ViewController.h */,
 				0E4BE1CE1C9AD2EC000EE871 /* ViewController.m */,
-				0E4BE1D01C9AD2EC000EE871 /* Main.storyboard */,
 				0E4BE1D31C9AD2EC000EE871 /* Assets.xcassets */,
 				0E4BE1D51C9AD2EC000EE871 /* LaunchScreen.storyboard */,
 				0E4BE1D81C9AD2EC000EE871 /* Info.plist */,
@@ -138,6 +139,15 @@
 				0E4BE1EE1C9AD2EC000EE871 /* Info.plist */,
 			);
 			path = CountdownButtonUITests;
+			sourceTree = "<group>";
+		};
+		0E4BE1FA1C9AD490000EE871 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E4BE1FB1C9AD4B3000EE871 /* UICountdownButton.h */,
+				0E4BE1FC1C9AD4B3000EE871 /* UICountdownButton.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,7 +255,6 @@
 			files = (
 				0E4BE1D71C9AD2EC000EE871 /* LaunchScreen.storyboard in Resources */,
 				0E4BE1D41C9AD2EC000EE871 /* Assets.xcassets in Resources */,
-				0E4BE1D21C9AD2EC000EE871 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E4BE1CF1C9AD2EC000EE871 /* ViewController.m in Sources */,
+				0E4BE1FD1C9AD4B3000EE871 /* UICountdownButton.m in Sources */,
 				0E4BE1CC1C9AD2EC000EE871 /* AppDelegate.m in Sources */,
 				0E4BE1C91C9AD2EC000EE871 /* main.m in Sources */,
 			);
@@ -308,14 +318,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0E4BE1D01C9AD2EC000EE871 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0E4BE1D11C9AD2EC000EE871 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0E4BE1D51C9AD2EC000EE871 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
